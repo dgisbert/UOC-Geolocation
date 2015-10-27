@@ -1,0 +1,55 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/img_header"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        map:cameraZoom="11"
+        map:mapType="terrain"
+        map:uiZoomControls="true"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/activity_main">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userCenter"
+            android:src="@drawable/user_center"
+            android:contentDescription="@string/TXT00003"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:onClick="centerCurrentPositionInMap"
+            android:background="#ffffff"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/carCenter"
+            android:src="@drawable/car_center"
+            android:contentDescription="@string/TXT00001"
+            android:layout_gravity="end"
+            android:layout_marginTop="70dp"
+            android:onClick="centerCarInMap"
+            android:background="#ffffff"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+        />
+
+    </fragment>
+
+</RelativeLayout>

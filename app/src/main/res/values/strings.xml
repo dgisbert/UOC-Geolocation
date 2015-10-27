@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Manifest strings -->
+
+    <string name="app_name">Geolocation</string>
+
+    <!-- Activity titles -->
+
+    <string name="title_activity_main">Geolocation</string>
+
+    <!-- Widget strings    -->
+
+    <string name="TXT00001">Center on car location</string>
+    <string name="TXT00002">There isn\'t a car location marker on map.</string>
+    <string name="TXT00003">Center on current location</string>
+
+</resources>
